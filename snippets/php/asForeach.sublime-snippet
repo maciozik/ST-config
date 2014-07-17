@@ -1,0 +1,10 @@
+<snippet>
+
+<content><![CDATA[
+as \$k=>\$v
+]]></content>
+
+<tabTrigger>askv</tabTrigger>
+<scope>source.php</scope>
+
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+
+<content><![CDATA[
+, ${1:property}: '${2:value}'$3
+]]></content>
+
+<tabTrigger>prop</tabTrigger>
+<scope>source.js</scope>
+
+</snippet>

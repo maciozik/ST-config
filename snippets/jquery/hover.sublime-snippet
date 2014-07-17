@@ -1,0 +1,12 @@
+<snippet>
+
+<content><![CDATA[
+hover(function($1) \{
+	\$('$2').$3
+\});
+]]></content>
+
+<tabTrigger>hover</tabTrigger>
+<scope>source.js</scope>
+
+</snippet>

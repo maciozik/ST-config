@@ -1,0 +1,15 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 100,
+	"color_scheme": "Packages/User/colorDark.tmTheme",
+	"dictionary": "Packages/Language - French/French.dic",
+	"font_size": 10,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}

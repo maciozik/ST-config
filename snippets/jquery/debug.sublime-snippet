@@ -1,0 +1,10 @@
+<snippet>
+
+<content><![CDATA[
+\$('body').html(${1:var});$0
+]]></content>
+
+<tabTrigger>debug</tabTrigger>
+<scope>source.js</scope>
+
+</snippet>

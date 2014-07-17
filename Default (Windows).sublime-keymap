@@ -1,0 +1,49 @@
+[
+	{ "keys": ["ctrl+alt+n"], "command": "new_window" },
+	{ "keys": ["ctrl+q"], "command": "save_all" },
+	{ "keys": ["ctrl+w"], "command": "close_file" },
+	{ "keys": ["ctrl+f4"], "command": "close" },
+	{ "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+	{ "keys": ["enter"], "command": "commit_completion", "context":
+		[
+			{ "key": "auto_complete_visible" },
+			{ "key": "setting.auto_complete_commit_on_tab", "operand": true }
+		]
+	},
+
+	// Fuzzy-opening
+	{ "keys": ["ctrl+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["tab"], "command": "hide_overlay", "context":
+		[
+			{ "key": "overlay_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+	// Advanced New File
+	{ "keys": ["ctrl+shift+n"], "command": "advanced_new_file_new"},
+
+	// Command Palette
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	// Panels : Command Palette, Goto Anything
+	//	Delete cause that close the Advanced New File autocompletion
+	//	{ "keys": ["tab"], "command": "hide_panel", "args": {"cancel": true },
+	//		"context":
+	//		[
+	//			{ "key": "panel_visible", "operator": "equal", "operand": true }
+	//		]
+	//	},
+
+	// Find and replace
+	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
+	{ "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+	// Selection researches on Google or officials docs
+	{ "keys": ["ctrl+alt+g"], "command": "open_browser", "args": {"url": "http://www.google.fr/#q=%s"} },
+	{ "keys": ["ctrl+alt+p"], "command": "open_browser", "args": {"url": "http://www.php.net/%s"} },
+	{ "keys": ["ctrl+alt+j"], "command": "open_browser", "args": {"url": "http://api.jquery.com/?s=%s"} },
+
+	// Commands SFTP
+	{ "keys": ["ctrl+shift+u"], "command": "sftp_upload_file" },
+	{ "keys": ["ctrl+alt+u"], "command": "sftp_upload_open_files" }
+]
