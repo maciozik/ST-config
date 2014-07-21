@@ -1,16 +1,38 @@
 [
+
+	// Navigation
 	{ "keys": ["ctrl+alt+n"], "command": "new_window" },
-	{ "keys": ["ctrl+q"], "command": "save_all" },
 	{ "keys": ["ctrl+w"], "command": "close_file" },
-	{ "keys": ["ctrl+f4"], "command": "close" },
+	{ "keys": ["ctrl+alt+w"], "command": "close_window" },
+	{ "keys": ["ctrl+q"], "command": "save_all" },
+
+	// Browse Packages
+	{ "keys": ["ctrl+shift+p"], "command": "open_dir", "args": {"dir": "$packages"} },
+
+	// Goto Line
 	{ "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
+	// Find and replace
+	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
+	{ "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+	// Command Palette
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+	// Completion with Enter
 	{ "keys": ["enter"], "command": "commit_completion", "context":
 		[
 			{ "key": "auto_complete_visible" },
 			{ "key": "setting.auto_complete_commit_on_tab", "operand": true }
 		]
 	},
+
+	// Open C:\wamp\www\
+	{ "keys": ["ctrl+shift+w"], "command": "open_dir", "args": {"dir": "C:/wamp/www/"} },
+
+	// Open Cmder
+	// See OpenCmder Plugin : https://github.com/maciozik/ST-OpenCmder
+	{ "keys": ["ctrl+shift+c"], "command": "open_cmder" },
 
 	// Fuzzy-opening
 	{ "keys": ["ctrl+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
@@ -23,27 +45,14 @@
 	// Advanced New File
 	{ "keys": ["ctrl+shift+n"], "command": "advanced_new_file_new"},
 
-	// Command Palette
-	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
-	// Panels : Command Palette, Goto Anything
-	//	Delete cause that close the Advanced New File autocompletion
-	//	{ "keys": ["tab"], "command": "hide_panel", "args": {"cancel": true },
-	//		"context":
-	//		[
-	//			{ "key": "panel_visible", "operator": "equal", "operand": true }
-	//		]
-	//	},
-
-	// Find and replace
-	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
-	{ "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
-
-	// Selection researches on Google or officials docs
-	{ "keys": ["ctrl+alt+g"], "command": "open_browser", "args": {"url": "http://www.google.fr/#q=%s"} },
-	{ "keys": ["ctrl+alt+p"], "command": "open_browser", "args": {"url": "http://www.php.net/%s"} },
-	{ "keys": ["ctrl+alt+j"], "command": "open_browser", "args": {"url": "http://api.jquery.com/?s=%s"} },
-
 	// Commands SFTP
 	{ "keys": ["ctrl+shift+u"], "command": "sftp_upload_file" },
-	{ "keys": ["ctrl+alt+u"], "command": "sftp_upload_open_files" }
+	{ "keys": ["ctrl+alt+u"], "command": "sftp_upload_open_files" },
+
+	// Selection researches on Google or official Docs
+	// See OpenBrowser Plugin : https://github.com/Grafikart/Open-Browser-SublimeText2-Plugin
+	{ "keys": ["ctrl+alt+g"], "command": "open_browser", "args": {"url": "http://www.google.fr/#q=%s"} },
+	{ "keys": ["ctrl+alt+p"], "command": "open_browser", "args": {"url": "http://www.php.net/%s"} },
+	{ "keys": ["ctrl+alt+j"], "command": "open_browser", "args": {"url": "http://api.jquery.com/?s=%s"} }
+
 ]

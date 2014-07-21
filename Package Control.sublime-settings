@@ -6,16 +6,13 @@
 		"Autoprefixer",
 		"BracketHighlighter",
 		"Color Highlighter",
-		"CSS Color Converter",
 		"DocBlockr",
 		"Emmet",
 		"Inc-Dec-Value",
 		"LESS",
 		"LiveReload",
-		"Nettuts+ Fetch",
 		"Package Control",
 		"SFTP",
-		"SublimeCodeIntel",
 		"SublimeLinter",
 		"WordHighlight"
 	]

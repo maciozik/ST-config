@@ -3,6 +3,8 @@ ST-config
 
 My config for Sublime Text 2.
 
-All files must be put in the Packages/User folder.
+##Details
 
-I use the plugin 'Open-Browser' by Grafikart : https://github.com/Grafikart/Open-Browser-SublimeText2-Plugin
+All files must be clone into the `User` folder of your packages folder.
+
+In addition to all packages, I use the plugin [OpenBrowser](https://github.com/Grafikart/Open-Browser-SublimeText2-Plugin) by Grafikart and my personnal plugin [OpenCmder](https://github.com/maciozik/ST-OpenCmder).
