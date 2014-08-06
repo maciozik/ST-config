@@ -1,19 +1,36 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2",
+		"select-windows",
+		"ssl-windows"
+	],
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"AutoFileName",
-		"Autoprefixer",
 		"BracketHighlighter",
+		"Can I Use",
 		"Color Highlighter",
+		"CSS Color Converter",
 		"DocBlockr",
 		"Emmet",
 		"Inc-Dec-Value",
+		"Jade",
+		"jQuery",
 		"LESS",
 		"LiveReload",
+		"Nettuts+ Fetch",
 		"Package Control",
 		"SFTP",
 		"SublimeLinter",
-		"WordHighlight"
+		"Terminal",
+		"Theme - Soda",
+		"WordHighlight",
+		"Zeal"
 	]
 }

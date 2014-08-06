@@ -2,37 +2,13 @@
 
 	// Navigation
 	{ "keys": ["ctrl+alt+n"], "command": "new_window" },
+	{ "keys": ["ctrl+q"], "command": "save_all" },
 	{ "keys": ["ctrl+w"], "command": "close_file" },
 	{ "keys": ["ctrl+alt+w"], "command": "close_window" },
-	{ "keys": ["ctrl+q"], "command": "save_all" },
-
-	// Browse Packages
-	{ "keys": ["ctrl+shift+p"], "command": "open_dir", "args": {"dir": "$packages"} },
-
-	// Goto Line
-	{ "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
-
-	// Find and replace
-	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
-	{ "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+	{ "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
 
 	// Command Palette
 	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
-
-	// Completion with Enter
-	{ "keys": ["enter"], "command": "commit_completion", "context":
-		[
-			{ "key": "auto_complete_visible" },
-			{ "key": "setting.auto_complete_commit_on_tab", "operand": true }
-		]
-	},
-
-	// Open C:\wamp\www\
-	{ "keys": ["ctrl+shift+w"], "command": "open_dir", "args": {"dir": "C:/wamp/www/"} },
-
-	// Open Cmder
-	// See OpenCmder Plugin : https://github.com/maciozik/ST-OpenCmder
-	{ "keys": ["ctrl+shift+c"], "command": "open_cmder" },
 
 	// Fuzzy-opening
 	{ "keys": ["ctrl+shift+o"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
@@ -42,17 +18,61 @@
 		]
 	},
 
+	// Goto Anything
+	{ "keys": ["ctrl+alt+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["ctrl+alt+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+
+	// Find (and replace)
+	{ "keys": ["ctrl+r"], "command": "find_all_under" },
+	{ "keys": ["ctrl+shift+r"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
+	{ "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+
+	// Swap lines
+	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+down"], "command": "swap_line_down" },
+
+	// Completion with Enter
+	{ "keys": ["enter"], "command": "commit_completion", "context":
+		[
+			{ "key": "auto_complete_visible" },
+			{ "key": "setting.auto_complete_commit_on_tab", "operand": true }
+		]
+	},
+
+	// Browse Packages
+	{ "keys": ["ctrl+shift+p"], "command": "open_dir", "args": {"dir": "$packages"} },
+
+	// Open /www
+	{ "keys": ["ctrl+shift+w"], "command": "open_dir", "args": {"dir": "C:/wamp/www/"} },
+
+	// Open Containing Folder
+	{ "keys": ["ctrl+shift+x"], "command": "open_dir", "args": {"dir": "$file_path"} },
+
+	// Open Terminal
+	{ "keys": ["ctrl+shift+c"], "command": "open_terminal" },
+
+	// Open File in Browser
+	{ "keys": ["f5"], "command": "open_file_in_browser" },
+
+	// Create Temp Backup
+	{ "keys": ["ctrl+alt+s"], "command": "backups_helper" },
+
 	// Advanced New File
 	{ "keys": ["ctrl+shift+n"], "command": "advanced_new_file_new"},
 
-	// Commands SFTP
+	// SFTP
 	{ "keys": ["ctrl+shift+u"], "command": "sftp_upload_file" },
 	{ "keys": ["ctrl+alt+u"], "command": "sftp_upload_open_files" },
 
+	// Color Converter
+	{ "keys": ["ctrl+h"], "command": "colorconvert" },
+
+	// Can I Use
+	{ "keys": ["shift+f1"], "command": "use_it" },
+
 	// Selection researches on Google or official Docs
 	// See OpenBrowser Plugin : https://github.com/Grafikart/Open-Browser-SublimeText2-Plugin
-	{ "keys": ["ctrl+alt+g"], "command": "open_browser", "args": {"url": "http://www.google.fr/#q=%s"} },
-	{ "keys": ["ctrl+alt+p"], "command": "open_browser", "args": {"url": "http://www.php.net/%s"} },
-	{ "keys": ["ctrl+alt+j"], "command": "open_browser", "args": {"url": "http://api.jquery.com/?s=%s"} }
+	{ "keys": ["ctrl+shift+g"], "command": "open_browser", "args": {"url": "http://www.google.fr/#q=%s"} }
 
 ]

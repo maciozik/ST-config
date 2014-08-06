@@ -1,9 +1,0 @@
-<snippet>
-
-<content><![CDATA[
-animate({ ${1:property}: '${2:value}'$3 }, ${4:500});$5
-]]></content>
-
-<tabTrigger>anim</tabTrigger>
-
-</snippet>

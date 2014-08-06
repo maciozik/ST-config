@@ -1,15 +1,28 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 100,
-	"color_scheme": "Packages/User/colorDark.tmTheme",
+	"color_scheme": "Packages/User/Color Forest.tmTheme",
+	"detect_slow_plugins": false,
 	"dictionary": "Packages/Language - French/French.dic",
-	"font_size": 10,
+	"font_size": 9,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"mouse_wheel_switches_tabs": true,
 	"save_on_focus_lost": true,
+	"soda_classic_tabs": true,
+	"soda_folder_icons": true,
+	"theme": "Soda Dark.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": false
 }

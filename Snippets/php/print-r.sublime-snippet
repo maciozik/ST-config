@@ -1,0 +1,10 @@
+<snippet>
+
+<content><![CDATA[
+print_r(\$${0:var});
+]]></content>
+
+<tabTrigger>debug</tabTrigger>
+<scope>source.php</scope>
+
+</snippet>
