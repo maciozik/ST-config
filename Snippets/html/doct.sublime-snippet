@@ -1,0 +1,31 @@
+<snippet>
+
+<content><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>$1</title>
+	<meta name="description" content="$2"/>
+	<link rel="icon" ${3:type="image/png" }href="${4:favicon.png}" />
+	<link rel="stylesheet" href="css/${5:main}.css" />
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+
+	$0
+
+${6:${7:
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>}
+<script src="js/${10:main}.js"></script>}${8:
+<?php require 'layouts/${9:def.scripts}.php'; ?>}
+
+</body>
+</html>
+]]></content>
+
+<tabTrigger>doct</tabTrigger>
+
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+foreach(\$${1:tab} as \$${2:k}${3:=>\$${4:v}}) {
+	$5
+}
+$0
+]]></content>
+    <tabTrigger>foreach</tabTrigger>
+    <scope>source.php</scope>
+</snippet>

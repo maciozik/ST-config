@@ -27,8 +27,11 @@
 		]
 	},
 
-	// Open C:\wamp\www\
+	// Open /www
 	{ "keys": ["ctrl+shift+w"], "command": "open_dir", "args": {"dir": "C:/wamp/www/"} },
+
+	// Open Containing Folder
+	{ "keys": ["ctrl+shift+x"], "command": "open_dir", "args": {"dir": "$file_path"} },
 
 	// Open Cmder
 	// See OpenCmder Plugin : https://github.com/maciozik/ST-OpenCmder
@@ -48,6 +51,9 @@
 	// Commands SFTP
 	{ "keys": ["ctrl+shift+u"], "command": "sftp_upload_file" },
 	{ "keys": ["ctrl+alt+u"], "command": "sftp_upload_open_files" },
+
+	// Color Converter
+	{ "keys": ["ctrl+h"], "command": "colorconvert" },
 
 	// Selection researches on Google or official Docs
 	// See OpenBrowser Plugin : https://github.com/Grafikart/Open-Browser-SublimeText2-Plugin

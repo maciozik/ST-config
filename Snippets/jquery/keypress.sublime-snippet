@@ -1,0 +1,12 @@
+<snippet>
+
+<content><![CDATA[
+keypress(function(${1:event}){
+	$2
+});
+]]></content>
+
+<tabTrigger>keypress</tabTrigger>
+<scope>source.js</scope>
+
+</snippet>

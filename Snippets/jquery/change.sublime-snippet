@@ -1,0 +1,12 @@
+<snippet>
+
+<content><![CDATA[
+change(function(){
+	$1
+});
+]]></content>
+
+<tabTrigger>change</tabTrigger>
+<scope>source.js</scope>
+
+</snippet>

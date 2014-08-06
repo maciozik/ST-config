@@ -1,0 +1,9 @@
+<snippet>
+
+<content><![CDATA[
+\$(window).$1
+]]></content>
+
+<tabTrigger>win</tabTrigger>
+
+</snippet>

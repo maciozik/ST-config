@@ -1,0 +1,12 @@
+<snippet>
+
+<content><![CDATA[
+each(function(){
+	$1
+});
+]]></content>
+
+<tabTrigger>each</tabTrigger>
+<scope>source.js</scope>
+
+</snippet>
